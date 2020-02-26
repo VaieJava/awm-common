@@ -1,7 +1,7 @@
 package com.outdd.common.base;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.outdd.constants.EntityConstants;
+import com.outdd.common.constants.EntityConstants;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
