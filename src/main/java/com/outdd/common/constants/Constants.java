@@ -9,6 +9,8 @@ public interface Constants {
 	Integer HTTP_RES_CODE_200 = 200;
 	// 系统错误
 	Integer HTTP_RES_CODE_500 = 500;
+	//字段为空
+	Integer HTTP_FIELD_NULL_70001 = 70001;
 
 	// 发送邮件
 	String MSG_EMAIL = "email";
@@ -22,6 +24,13 @@ public interface Constants {
 	int MEMBER_TOKEN_COOKIE = (60 * 60 * 24 * 90);
 
 	static final String DEMO_RESOURCE_ID = "order";
+
+
+
+
+
+
+
 
 
 
