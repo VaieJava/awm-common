@@ -1,11 +1,13 @@
 package com.outdd.common.base;
 
+import java.io.Serializable;
+
 /**
  * 公共响应类
  *
  * @param <T>
  */
-public class BaseResponse<T> {
+public class BaseResponse<T> implements Serializable {
 
     private static final int CODE_SUCCESS = 200;
 
