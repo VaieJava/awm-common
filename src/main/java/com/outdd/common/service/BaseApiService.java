@@ -4,6 +4,8 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.Serializable;
 import java.util.List;
@@ -15,23 +17,31 @@ public interface BaseApiService<T extends Serializable>  {
         return null;
     }
 
+
     T save(T o);
+
 
     List<T> findAll();
 
     List<T> findAll(Sort var1);
 
+
     List<T> findAllById(Iterable<Long> var1);
+
 
     <S extends T> List<S> saveAll(Iterable<S> var1);
 
     void flush();
 
+
     <S extends T> S saveAndFlush(S var1);
+
 
     void deleteInBatch(Iterable<T> var1);
 
+
     void deleteAllInBatch();
+
 
     T getOne(Long var1);
 

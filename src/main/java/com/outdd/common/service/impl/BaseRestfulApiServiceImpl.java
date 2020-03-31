@@ -5,11 +5,13 @@ import com.outdd.common.service.BaseRestfulApiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Sort;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.Serializable;
 import java.util.List;
 
 @Slf4j
+@RestController
 public class BaseRestfulApiServiceImpl<D extends Serializable>
         implements BaseRestfulApiService<D> {
     @Override

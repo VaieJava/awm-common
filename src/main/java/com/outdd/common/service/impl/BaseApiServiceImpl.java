@@ -4,6 +4,8 @@ import com.outdd.common.service.BaseApiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Sort;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,6 +14,7 @@ import java.util.List;
 public class BaseApiServiceImpl<D extends Serializable> implements BaseApiService<D> {
 
     @Override
+
     public D save(D o) {
         return getRepository().save(o);
     }

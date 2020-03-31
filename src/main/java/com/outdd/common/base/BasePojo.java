@@ -3,6 +3,7 @@ package com.outdd.common.base;
 import com.outdd.common.constants.EntityConstants;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -13,12 +14,15 @@ import java.util.Date;
  * @version v1.0
  */
 @Data
+@MappedSuperclass
 public class BasePojo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
      * 主键
      */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     /**
      * 版本
